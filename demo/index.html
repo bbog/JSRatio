@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<title>JSRatio Demo</title>
+
+	<script src="../dist/jsratio.js"></script>
+
+	<link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+	<link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+		body {
+			font-family: Raleway, sans-serif;
+		}
+
+		div {
+			border-radius: 3px;
+			text-align: center;
+			font-family: Impact;
+			font-size: 2em;
+			color: #fff;
+			vertical-align: top;
+			margin: 10px;
+			padding: 10px;
+			display: inline-block;
+			background-color: #34CEFC;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>JSRatio Demo</h1>
+	<hr/>
+	<p>
+	    This is the demo page for <a href="https://github.com/bbog/JSRatio" title="JSRatio">JDRatio</a>, a tiny aspect-ratio enforcing library. You can also view the page source for more info about the demo.
+	    <br/><br/>
+	    Try resizing the browser window to see if the ratio remains the same.
+	</p>
+
+	<h2>Example</h2>
+
+	<pre>
+		<code class="html">
+&lt;div style="width: 50%;" data-js-ratio="1.5"&gt;1.5&lt;/div&gt;
+
+&lt;div style="height: 300px;" data-js-ratio="0.5"&gt;0.5&lt;/div&gt;
+
+&lt;div style="width: 50%; height: 200px;" data-js-ratio="1.5" data-js-ratio-width&gt;1.5&lt;/div&gt;
+
+&lt;div style="width: 50%; height: 200px;" data-js-ratio="0.5" data-js-ratio-height&gt;0.5&lt;/div&gt;
+
+
+&lt;script&gt;JSRatio.init();&lt;/script&gt;
+		</code>
+	</pre>
+
+	<div style="width: 50%;" data-js-ratio="1.5">1.5</div>
+
+	<div style="height: 300px;" data-js-ratio="0.5">0.5</div>
+
+	<div style="width: 50%; height: 200px;" data-js-ratio="1.5" data-js-ratio-width>1.5</div>
+
+	<div style="width: 50%; height: 200px;" data-js-ratio="0.5" data-js-ratio-height>0.5</div>
+
+	<script>
+		JSRatio.init();
+		hljs.initHighlightingOnLoad();
+	</script>
+
+</body>
