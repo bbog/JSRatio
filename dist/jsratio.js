@@ -146,7 +146,11 @@
 		/**
 		 * Provides a way to recalculate the sizes in case they are changed dynamically
 		 */
-		var update = function () {
+		var update = function (getItemsAgain) {
+			if (getItemsAgain === true) {
+				getItems();
+			}
+
 			applyRatios();
 		};
 
