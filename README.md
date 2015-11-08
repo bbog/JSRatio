@@ -27,7 +27,7 @@ It is designed for the basic scenario where your DOM element, a &lt;div&gt; perh
 
 
 ```html
-&lt;script&gt;JSRatio.init();&lt;/script&gt;
+<script>JSRatio.init();</script>
 ```
 
 **JSRatio** will automatically recalculate everything on resize but if you need to update the values in case you dynamically add, remove or resize elements that have a ratio, you can call the `update` method, to 
@@ -38,9 +38,9 @@ On your target elements all you have to do is specify the ratio via the `data-js
 Example:
 
 ```html
-&lt;div style="width: 50%;" data-js-ratio="1.5"&gt;1.5&lt;/div&gt;
+<div style="width: 50%;" data-js-ratio="1.5">1.5</div>
 
-&lt;div style="height: 300px;" data-js-ratio="0.5"&gt;0.5&lt;/div&gt;
+<div style="height: 300px;" data-js-ratio="0.5">0.5</div>
 ```
 
 
@@ -49,9 +49,9 @@ If for some reasons you have both a width and a height set for your element, you
 Example:
 
 ```html
-&lt;div style="width: 50%; height: 200px;" data-js-ratio="1.5" data-js-ratio-width&gt;1.5&lt;/div&gt;
+<div style="width: 50%; height: 200px;" data-js-ratio="1.5" data-js-ratio-width>1.5</div>
 
-&lt;div style="width: 50%; height: 200px;" data-js-ratio="0.5" data-js-ratio-height&gt;0.5&lt;/div&gt;
+<div style="width: 50%; height: 200px;" data-js-ratio="0.5" data-js-ratio-height>0.5</div>
 ```
 
 
