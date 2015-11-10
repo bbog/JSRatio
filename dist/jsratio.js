@@ -70,21 +70,19 @@
 					var useHeight = true;
 				}
 
-				var hasWidth  = (item.style.width),
-					hasHeight = (item.style.height),
-					hasWidthAndHeight = (hasWidth && hasHeight);
+				var currentWidth  = item.clientWidth,
+					currentHeight = item.clientHeight,
+					hasWidthAndHeight = (currentWidth > 0 && currentHeight > 0);
 
-				if ((hasWidthAndHeight && useWidth) || hasWidth) {
+				if ((hasWidthAndHeight && useWidth) || currentWidth > 0) {
 
-					var width  = item.clientWidth,
-						height = width / ratio;
+					var height = currentWidth / ratio;
 
 					item.style.height = height + 'px';
 
-				} else if ((hasWidthAndHeight && useHeight) || hasHeight) {
+				} else if ((hasWidthAndHeight && useHeight) || currentHeight > 0) {
 
-					var height = item.clientHeight,
-						width  = height * ratio;
+					var width  = currentHeight * ratio;
 
 					item.style.width = width + 'px';
 				}
