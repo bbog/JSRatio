@@ -1,6 +1,6 @@
 /*!
  * JSRatio - aspect ratio enforcing library
- * v0.1.1
+ * v0.1.2
  * awesomestsite.com/awesomest-projects/js-ratio
  * copyright Bogdan Bucur 2015
  * MIT License
