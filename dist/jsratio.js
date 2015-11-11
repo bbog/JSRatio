@@ -1,6 +1,6 @@
 /*!
  * JSRatio - aspect ratio enforcing library
- * v0.1.2
+ * v0.1.3
  * awesomestsite.com/awesomest-projects/js-ratio
  * copyright Bogdan Bucur 2015
  * MIT License
@@ -74,16 +74,24 @@
 					currentHeight = item.clientHeight,
 					hasWidthAndHeight = (currentWidth > 0 && currentHeight > 0);
 
-				if ((hasWidthAndHeight && useWidth) || currentWidth > 0) {
+				if (hasWidthAndHeight && useWidth) {
 
 					var height = currentWidth / ratio;
-
 					item.style.height = height + 'px';
 
-				} else if ((hasWidthAndHeight && useHeight) || currentHeight > 0) {
+				} else if (hasWidthAndHeight && useHeight) {
 
 					var width  = currentHeight * ratio;
+					item.style.width = width + 'px';
 
+				} else if (currentWidth > 0) {
+
+					var height = currentWidth / ratio;
+					item.style.height = height + 'px';
+
+				} else if (currentHeight > 0) {
+
+					var width  = currentHeight * ratio;
 					item.style.width = width + 'px';
 				}
 			}
