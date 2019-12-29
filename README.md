@@ -7,7 +7,7 @@ It is designed for the basic scenario where your DOM element, a &lt;div&gt; perh
 
 ##Project page
 
-- [JSRatio](http://awesomestsite.com/awesomest-projects/js-ratio/)
+- [JSRatio](https://dev.bogdanbucur.eu/awesomest-projects/js-ratio/)
 
 
 ##Download
@@ -18,7 +18,7 @@ It is designed for the basic scenario where your DOM element, a &lt;div&gt; perh
 
 ##Demo
 
-- [Demo](http://awesomestsite.com/awesomest-projects/js-ratio/demo/)
+- [Demo](https://dev.bogdanbucur.eu/awesomest-projects/js-ratio/demo/)
 
 
 ##Basic usage
